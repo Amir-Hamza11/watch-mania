@@ -1,14 +1,70 @@
 .app__slide {
     width: 100vw;
-    padding: 1rem;
+    padding: 0;
 }
 
 .app__slide-backdrop {
-    width: 100vw;
-    height: auto;
+    position: relative;
+    width: auto;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.app__slide-backdrop img {
+    object-fit: cover;
+    opacity: .9;
 }
 
 .app__slide img {
     width: 100%;
+    /* height: 100%; */
+}
+.app__slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    width: 100%;
     height: 100%;
+    padding: 1rem 1rem 1rem 4rem;
+
+        /* ff 3.6+ */
+        background:-moz-linear-gradient(90deg, rgba(15, 16, 16, 0.99) 0%, rgba(238, 130, 238, 0.02) 100%); 
+
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-linear-gradient(90deg, rgba(15, 16, 16, 0.99) 0%, rgba(238, 130, 238, 0.02) 100%);
+    
+        /* opera 11.10+ */
+        background:-o-linear-gradient(90deg, rgba(15, 16, 16, 0.99) 0%, rgba(238, 130, 238, 0.02) 100%);
+    
+        /* ie 6-9 */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EE82EE', endColorstr='#0F1010', GradientType=0 );
+    
+        /* ie 10+ */
+        background:-ms-linear-gradient(90deg, rgba(15, 16, 16, 0.99) 0%, rgba(238, 130, 238, 0.02) 100%);
+    
+        /* global 94%+ browsers support */
+        background:linear-gradient(90deg, rgba(15, 16, 16, 0.99) 0%, rgba(238, 130, 238, 0.02) 100%);
+}
+
+
+.app__slide-content_card {
+    width: 200px;
+    height: auto;
+}
+.app__slide-content_card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.app__slide-content p {
+    font-size: 40px;
+    font-weight: 500;
+    font-style: var(--font-base);
+    color: var(--color-white);
 }

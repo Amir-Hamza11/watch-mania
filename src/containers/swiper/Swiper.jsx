@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { ApiGetTrending } from '../../components/Strings'
 import Slide from '../../components/slide/Slide'
@@ -9,30 +9,19 @@ const Swiper = () => {
 
     const [response, setResponse] = useState(null)
     const [slide, setSlide] = useState(0)
-    const [width, setWidth] = useState(0);
     const scrollRef = React.useRef(null)
-    const widthRef = React.useRef(null)
 
-
-    useLayoutEffect(() => {
-        setWidth(widthRef.current.offsetWidth);
-    }, []);
-
-    console.log(slide);
+    console.log(response);
 
     const scroll = (direction) => {
-        // const { current } = scrollRef;
 
         if (slide > 0 && direction === "left") {
             setSlide((p) => p - 1)
         }
-        if (slide < response.results.length && direction === "right") {
+        if (slide < response.results.length - 1 && direction === "right") {
             setSlide((p) => p + 1)
         }
     }
-
-
-
 
     useEffect(() => {
         ApiGetTrending('trending/all/day').then((r) => {
@@ -40,7 +29,7 @@ const Swiper = () => {
         })
     }, [])
     return (
-        <div className='app__swiper' ref={widthRef} >
+        <div className='app__swiper'>
             {<div className='app__swiper-carausel' ref={scrollRef} >
                 {response && response.results.filter((item, index) => index === slide).map((item) => {
                     return (
