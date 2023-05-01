@@ -1,0 +1,19 @@
+.app__navbar {
+    height: 50px;
+    width: 100%;
+    background: var(--color-gray);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__navbar button {
+    font-size: 30px;
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

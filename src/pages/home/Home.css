@@ -1,0 +1,4 @@
+.app__home {
+    background: var(--color-black);
+    min-height: 100vh;
+}

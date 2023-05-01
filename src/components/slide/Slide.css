@@ -1,0 +1,14 @@
+.app__slide {
+    width: 100vw;
+    padding: 1rem;
+}
+
+.app__slide-backdrop {
+    width: 100vw;
+    height: auto;
+}
+
+.app__slide img {
+    width: 100%;
+    height: 100%;
+}
