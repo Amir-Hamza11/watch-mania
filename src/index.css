@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Poppins:wght@200;300&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Poppins:wght@300;500;800&display=swap');* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,12 +11,16 @@ a {
 }
 
 :root {
-  --font-base: 'Poppins', sans-serif;
-  --font-alt: 'Cormorant', serif;
+  --font-base:'Poppins', sans-serif;
+  ;
+  --font-alt:'Noto Sans', sans-serif;
+  ;
 
-  --color-yellow: #f7e309;
+  --color-dim:rgb(126, 124, 124) ;
   --color-black: #000000;
   --color-gray: #1a1a1c;
-  --color-white:rgba(255, 255, 255, 0.89);
-  --color-light-grey:rgb(190, 190, 190);
+  --color-white:rgb(255, 255, 255);
+  --color-light-grey:rgb(215, 216, 215);
+  --color-dark-purple:rgb(16, 1, 28);
+  --color-light-purple:#9404fa;
 }

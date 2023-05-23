@@ -4,6 +4,7 @@ import Card from '../../components/card/Card'
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 
 import './Trending.css'
+import Title from '../../components/title/Title';
 
 const Trending = () => {
 
@@ -27,28 +28,33 @@ const Trending = () => {
         })
     }, [])
 
-    console.log(response);
+    // console.log(response);
 
     return (
         <div className='app__trending' >
+            {response && <Title title='Trending' />}
 
+            <button className='custom__scrollbtn left' onClick={() => scroll('left')} ><MdArrowBackIosNew /></button>
             <div className='app__trending-carousel' ref={scrollRef}  >
-                {response && response.results.map((item, index) => {
+
+                {response && response.results.map((item) => {
                     return (
                         <Card
                             key={item.poster_path}
                             poster={item.poster_path}
                             name={item.original_title || item.original_name}
                             vote={item.vote_average}
+                            id={item.id}
+                            media_type={item.media_type}
                         />
                     )
 
                 })}
+
             </div>
-            {response && <div className='app__trending-btn ' >
-                <button className='custom__scrollbtn' onClick={() => scroll('left')} ><MdArrowBackIosNew /></button>
-                <button className='custom__scrollbtn' onClick={() => scroll('right')} ><MdArrowForwardIos /></button>
-            </div>}
+            <button className='custom__scrollbtn right' onClick={() => scroll('right')} ><MdArrowForwardIos /></button>
+            {/* {response && <div className='app__trending-btn ' >
+            </div>} */}
 
         </div>
     )

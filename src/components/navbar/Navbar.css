@@ -1,19 +1,76 @@
 .app__navbar {
     height: 50px;
     width: 100%;
-    background: var(--color-gray);
+    background: transparent;
+
+    position: absolute;
+    z-index: 2;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 
 .app__navbar button {
     font-size: 30px;
     background: none;
-    color: white;
+    color: var(--color-light-grey);
     border: none;
     outline: none;
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.app__navbar-top_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    /* background-color: rgba(14, 11, 17, 0.2); */
+}
+
+.app__navbar-top_row-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(16, 1, 28, 0.7);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0 2px;
+    border: 20px solid var(--color-grey);
+}
+
+.app__navbar-top_row-search input {
+    font-size: 15px;
+    font-weight: 200;
+    padding: 8px 8px;
+    margin-right: 3px;
+    outline: none;
+    border: none;
+    width: 200px;
+    color: var(--color-light-grey);
+    background: none;
+}
+
+.app__navbar-top_row-search button {
+    font-size: 20px;
+    margin: 3px;
+
+}
+
+@media screen and (max-width:425px) {
+    .app__navbar-top_row-search input {
+        width: 150px;
+    }
+
+    .app__navbar button {
+        font-size: 26px; 
+    }
+
+    .app__navbar-top_row-search button{
+        font-size: 17px;
+    }
 }

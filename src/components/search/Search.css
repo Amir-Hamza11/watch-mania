@@ -1,0 +1,71 @@
+.app__search {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: scroll;
+    background: rgba(16, 1, 28, 0.8);
+    color: var(--color-white);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.app__search::-webkit-scrollbar {
+    display: none;
+}
+
+.app__search {
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+
+.app__search__div {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.app__search__card-wrapper {
+    width: 100px;
+    height: 150px;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.app__search__card-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.app__search__card-wrapper img {
+    width: inherit;
+    height: inherit;
+    object-fit: fill;
+}
+
+.app__search__content {
+    font-family: var(--font-base);
+    margin: 10px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+.app__search__content p:nth-child(1){
+    font-size: 15px;
+
+}
+
+.app__search__content .vote {
+    margin-top: 6px;
+}
+.app__search__content .vote p{
+    font-size: 12px;
+}
+
+.app__search__content p:nth-child(3){
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--color-light-grey);
+}

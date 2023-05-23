@@ -1,0 +1,33 @@
+.app__title {
+    width: 95%;
+    margin: 1rem;
+    display: flex;
+}
+
+.app__title p {
+    color: var(--color-white);
+    font-size: 16px;
+    font-family: var(--font-alt);
+    font-weight: 800;
+    cursor: pointer;
+}
+.app__title p:hover {
+    transform: scale(.9);
+}
+
+.app__title span{
+    margin: 0 3px 0 0px;
+    height: 25px;
+    width: 0px;
+    background: var(--color-light-purple);
+}
+
+.app__title div {
+    color: var(--color-light-purple);
+    font-size: 21px;
+    font-weight: 800;
+    margin-top: 2px;
+
+    display: flex;
+    align-items: center;
+}

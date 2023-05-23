@@ -1,0 +1,120 @@
+.app__hero {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+.app__hero-backdrop {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.app__hero-backdrop img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.app__hero-content {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10011C', endColorstr='#10011C', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
+
+}
+
+.app__hero-content p:first-child {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    max-width: 40%;
+    font-family: var(--font-base);
+    color: var(--color-white);
+
+}
+
+.app__hero-content p:nth-child(2) {
+    font-size: 13px;
+    font-family: var(--font-base);
+    color: var(--color-dim);
+    margin-left: 20px;
+}
+
+.app__hero-content p:nth-child(3) {
+    width: 40%;
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: var(--font-alt);
+    color: var(--color-light-grey);
+}
+
+
+
+
+@media screen and (max-width:620px) {
+
+    .app__hero-content p:first-child {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .app__hero-content p:nth-child(2) {
+        font-size: 15px;
+    }
+
+    .app__hero-content p:nth-child(3) {
+        width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:573px) {
+    .app__hero-backdrop {
+        width: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .app__hero-backdrop img {
+        object-fit: cover;
+        width: auto;
+        min-height: 100%;
+    } 
+
+    .app__hero-content p:first-child {
+        max-width: 70%;
+    }
+
+}
