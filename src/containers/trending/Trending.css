@@ -31,8 +31,19 @@
 .app__trending button {
     position: absolute;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
+
+.custom__scrollbtn-trending {
+    display: none;
+    transition: 0.2s ease;
+}
+
+.app__trending:hover .custom__scrollbtn-trending  {
+    display: block;
+}
+
+
 
 
 @media screen and (max-width:768px) {

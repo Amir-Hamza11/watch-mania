@@ -2,6 +2,8 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { ApiGetTrending } from '../../components/Strings'
+import { useNavigate } from 'react-router';
+
 
 import './Hero.css'
 
@@ -9,6 +11,7 @@ const Hero = () => {
 
     const [response, setResponse] = useState(null)
     const [random, setRandom] = useState(null)
+    const navigate = useNavigate();
 
     useEffect(() => {
         setRandom(Math.floor(Math.random() * 20))
@@ -18,6 +21,10 @@ const Hero = () => {
         })
 
     }, [])
+
+    const infoClick = (media_type, id) => {
+        navigate(`/media/${media_type}/${id}`)
+    }
 
 
 
@@ -39,7 +46,9 @@ const Hero = () => {
                                         item.release_date.substring(0, 4) :
                                         item.first_air_date.substring(0, 4)}
                                 </p>
-                                <p>{`${item.overview.substring(0,200)}...`} </p>
+                                <p>{`${item.overview.substring(0, 200)}...`} </p>
+
+                                <button onClick={() => infoClick(item.media_type, item.id)} >INFO</button>
                             </div>
                         </div>
                     )

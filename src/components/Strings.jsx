@@ -39,3 +39,13 @@ export async function ApiGetSearch(query_string) {
     return response;
 }
 
+
+//https://api.themoviedb.org/3/movie/1429/images?api_key=5fa2dec95501a8c9bae60e633ed8005e&include_image_language=en
+
+export async function ApiGetImages(query_string) {
+    const response = await
+        fetch(`${BASE_URL}${query_string}/images?api_key=${API_KEY}&include_image_language=en`)
+            .then((r) => r.json())
+    return response;
+}
+

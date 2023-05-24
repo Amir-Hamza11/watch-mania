@@ -27,6 +27,8 @@
     object-fit: fill;
 }
 
+
+
 .app__card-content {
     display: flex;
     flex-direction: column;
@@ -36,6 +38,7 @@
     padding: .2rem;
     position: relative;
 }
+
 
 .app__card-content p {
     font-family: var(--font-alt);

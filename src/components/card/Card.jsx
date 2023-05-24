@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BsFillBookmarkPlusFill } from "react-icons/bs";
+// import { BsFillBookmarkPlusFill } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
 
 import './Card.css'
@@ -30,9 +30,9 @@ const Card = ({ poster, name, vote, id, media_type }) => {
                 <p>{name}</p>
             </div>
 
-            <div className='app__card-save' >
+            {/* <div className='app__card-save' >
                 <button><BsFillBookmarkPlusFill /></button>
-            </div>
+            </div> */}
 
         </div>
     )

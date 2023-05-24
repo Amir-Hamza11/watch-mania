@@ -34,7 +34,7 @@ const Trending = () => {
         <div className='app__trending' >
             {response && <Title title='Trending' />}
 
-            <button className='custom__scrollbtn left' onClick={() => scroll('left')} ><MdArrowBackIosNew /></button>
+            <button className='custom__scrollbtn custom__scrollbtn-trending left' onClick={() => scroll('left')} ><MdArrowBackIosNew /></button>
             <div className='app__trending-carousel' ref={scrollRef}  >
 
                 {response && response.results.map((item) => {
@@ -52,7 +52,9 @@ const Trending = () => {
                 })}
 
             </div>
-            <button className='custom__scrollbtn right' onClick={() => scroll('right')} ><MdArrowForwardIos /></button>
+            <button className='custom__scrollbtn custom__scrollbtn-trending right' onClick={() => scroll('right')} >
+                <MdArrowForwardIos />
+            </button>
             {/* {response && <div className='app__trending-btn ' >
             </div>} */}
 

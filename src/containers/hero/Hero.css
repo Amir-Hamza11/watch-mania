@@ -1,13 +1,13 @@
 .app__hero {
     width: 100%;
-    height: 85vh;
+    height: 70vh;
     position: relative;
 }
 
 .app__hero-backdrop {
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -30,24 +30,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-  
+
     /* ff 3.6+ */
-    background:-moz-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%); 
+    background: -moz-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
+    background: -webkit-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
 
     /* opera 11.10+ */
-    background:-o-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
+    background: -o-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
 
     /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10011C', endColorstr='#10011C', GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#10011C', endColorstr='#10011C', GradientType=0);
 
     /* ie 10+ */
-    background:-ms-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
+    background: -ms-linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
 
     /* global 94%+ browsers support */
-    background:linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
+    background: linear-gradient(89deg, rgba(16, 1, 28, 1) 0%, rgba(16, 1, 28, 0.42) 67%, rgba(16, 1, 28, 0.15) 100%);
 
 }
 
@@ -78,6 +78,20 @@
     color: var(--color-light-grey);
 }
 
+.app__hero-content button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 2px;
+    color: var(--color-white);
+    background: var(--color-light-purple);
+    margin-top: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.app__hero-content button:hover {
+    background: #6403aa;
+}
 
 
 
@@ -106,12 +120,12 @@
         display: flex;
         justify-content: center;
     }
-    
+
     .app__hero-backdrop img {
         object-fit: cover;
         width: auto;
         min-height: 100%;
-    } 
+    }
 
     .app__hero-content p:first-child {
         max-width: 70%;
