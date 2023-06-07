@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/watch-mania/static/css/main.c4c8a29c.css",
-    "main.js": "/watch-mania/static/js/main.416c2721.js",
+    "main.css": "/watch-mania/static/css/main.2038b0c8.css",
+    "main.js": "/watch-mania/static/js/main.63e2fde7.js",
     "static/js/787.bd8ec04b.chunk.js": "/watch-mania/static/js/787.bd8ec04b.chunk.js",
     "static/media/play-button.png": "/watch-mania/static/media/play-button.ca62a7e74bce0f781fda.png",
     "static/media/slick.svg": "/watch-mania/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,12 +9,12 @@
     "static/media/slick.ttf": "/watch-mania/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/watch-mania/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/watch-mania/index.html",
-    "main.c4c8a29c.css.map": "/watch-mania/static/css/main.c4c8a29c.css.map",
-    "main.416c2721.js.map": "/watch-mania/static/js/main.416c2721.js.map",
+    "main.2038b0c8.css.map": "/watch-mania/static/css/main.2038b0c8.css.map",
+    "main.63e2fde7.js.map": "/watch-mania/static/js/main.63e2fde7.js.map",
     "787.bd8ec04b.chunk.js.map": "/watch-mania/static/js/787.bd8ec04b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4c8a29c.css",
-    "static/js/main.416c2721.js"
+    "static/css/main.2038b0c8.css",
+    "static/js/main.63e2fde7.js"
   ]
 }
